@@ -43,10 +43,11 @@ class AllGraphs {
 
     TreeSet<Edge> edges = new TreeSet<Edge>();
 
-    for (int k = 1; k <= vertices.length; k++) {
-      for (int klinha = 1; klinha <= vertices.length; klinha++) {
-        if ((k % q != 0) && (klinha == k + 1)) {
-          Edge newEdge = new Edge(new Integer(k), new Integer(klinha));
+    for (int k = 0; k < vertices.length; k++) {
+      for (int klinha = 0; klinha < vertices.length; klinha++) {
+        if (vertices[k] >= vertices[klinha]) continue;
+        if ((vertices[klinha] == vertices[k] + q) || (vertices[k] % q != 0) && (vertices[klinha] == vertices[k] + 1)) {
+          Edge newEdge = new Edge(new Integer(vertices[k]), new Integer(vertices[klinha]));
           edges.add(newEdge);
         }
       }
