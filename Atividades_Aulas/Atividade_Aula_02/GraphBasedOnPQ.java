@@ -31,7 +31,7 @@ class Edge implements Comparable<Edge> {
 
 }
 
-class AllGraphs {
+class GraphBasedOnPQ {
   public static void main(String[] args) {
     int p = 3;
     int q = 4;
