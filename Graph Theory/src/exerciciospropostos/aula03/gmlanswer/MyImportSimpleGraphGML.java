@@ -1,3 +1,8 @@
+/**
+ * Resposta para a última questão (7) do exercício da Aula 03
+ * @author rafael pontes
+ * */
+
 package exerciciospropostos.aula03.gmlanswer;
 
 import org.jgrapht.Graph;
@@ -12,7 +17,7 @@ import codigosprofessora.ImportGraph;
 import codigosprofessora.RelationshipEdge;
 
 public class MyImportSimpleGraphGML {
-	// Importa Grafo Simples no formato GML com r�tulo nos v�rtices e nas arestas
+	// Importa Grafo Simples no formato GML com rótulo nos vértices e nas arestas
 
 	public static void main(String[] args) {
 	    //Gml
